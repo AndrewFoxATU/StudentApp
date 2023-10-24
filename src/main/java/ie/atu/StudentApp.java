@@ -40,12 +40,4 @@ public class StudentApp {
         System.out.println("Name: " + studentName + " - " + studentEmail + ", Course: " + studentCourse);
     }
 
-    public class Main {
-        public static void main(String[] args) {
-            // Create a new person object
-            StudentApp johnDoe = new StudentApp("Andrew", "G00417373@atu.ie", "softwareEngineering");
-            // Call displayInfo()
-            johnDoe.displayInfo();
-        }
-    }
 }
