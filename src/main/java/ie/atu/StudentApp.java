@@ -2,22 +2,43 @@ package ie.atu;
 
 import java.util.Scanner;
 public class StudentApp {
-    String studentName;
-    String studentEmail;
-    String studentCourse;
 
+    private String studentName;
+    private String studentEmail;
+    private String studentCourse;
 
-    // Default Constructor
-    public  StudentApp() {
-        this.studentName = "John";
-        this.studentEmail = "JohnDoe@atu.ie";
-        this.studentCourse = "Software";
+    // Default constructor
+    public StudentApp() {
+        this.studentName = "";
+        this.studentEmail = "";
+        this.studentCourse = "";
     }
-
     // Constructor
-    public StudentApp(String studentName, String studentEmail, String studentCourse){
+    public StudentApp(String studentName, String studentEmail, String studentCourse) {
         this.studentName = studentName;
         this.studentEmail = studentEmail;
+        this.studentCourse = studentCourse;
+    }
+
+    //Getters
+    public String getName() {
+        return studentName;
+    }
+    public String getEmail() {
+        return studentEmail;
+    }
+    public String getCourse() {
+        return studentCourse;
+    }
+
+    // Setters
+    public void setName(String studentName) {
+        this.studentName = studentName;
+    }
+    public void setEmail(String studentEmail) {
+        this.studentEmail = studentEmail;
+    }
+    public void setCourse(String studentCourse) {
         this.studentCourse = studentCourse;
     }
 
