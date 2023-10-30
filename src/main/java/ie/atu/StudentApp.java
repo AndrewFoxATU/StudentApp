@@ -42,8 +42,7 @@ public class StudentApp {
         this.studentCourse = studentCourse;
     }
 
-    // Prompting User to input details
-    public void getUserInput() {
+    public void getUserInput() { // called from main.java
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Student Name: ");
@@ -54,11 +53,9 @@ public class StudentApp {
 
         System.out.print("Enter Student Course: ");
         this.studentCourse = scanner.nextLine();
-
     }
 
-    public void displayInfo() {
-        System.out.println("Name: " + studentName + " - " + studentEmail + ", Course: " + studentCourse);
+    public void displayInfo() { // called from main.java
+        System.out.println("Name: " + studentName + ", Email: " + studentEmail + ", Course: " + studentCourse);
     }
-
 }
