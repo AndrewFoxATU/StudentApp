@@ -11,7 +11,7 @@ public class Main {
             students[i].getUserInput();
         }
 
-        //calls displayInfo() from studentApp.java 3 times
+        //calls displayInfo() and getters from studentApp.java 3 times
         for (int i = 0; i < 3; i++) {
             System.out.println("Student " + (i+1) + " Details: ");
             students[i].displayInfo();
